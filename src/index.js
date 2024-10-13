@@ -1,17 +1,49 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import "./index.css"
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <>
+    <header>header</header>
+    <section>
+      <div className="row">
+        <div className="col">
+          <div className="card">
+            <img src="./images/01.png" alt="" />
+            <div className="card-body">
+              <h5 className="card-title">shoe 1</h5>
+              <p className="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi aliquam nesciunt, perferendis tenetur incidunt odit.</p>
+              <button className='add-to-card'>add to card</button>
+            </div>
+          </div>
+        </div>
+        <div className="col">
+          <div className="card">
+            <img src="./images/02.png" alt="" />
+            <div className="card-body">
+              <h5 className="card-title">shoe 2</h5>
+              <p className="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi aliquam nesciunt, perferendis tenetur incidunt odit.</p>
+              <button className='add-to-card'>add to card</button>
+            </div>
+          </div>
+        </div>
+        <div className="col">
+          <div className="card">
+            <img src="./images/03.png" alt="" />
+            <div className="card-body">
+              <h5 className="card-title">shoe 3</h5>
+              <p className="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi aliquam nesciunt, perferendis tenetur incidunt odit.</p>
+              <button className='add-to-card'>add to card</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>footer</footer>
+  </>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
